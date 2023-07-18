@@ -7,3 +7,10 @@ projects:
   autoplan:
     enabled: true
     when_modified: ["*.tf", "*.tfvars", "*.yaml", "*.yml", "*.json"]
+- name: terragrunt
+  dir: .
+  workspace: poc
+  workflow: terragrunt
+  autoplan:
+    enabled: true
+    when_modified: ["*.tf", "*.tfvars", "*.yaml", "*.yml", "*.json", "*.hcl"]
